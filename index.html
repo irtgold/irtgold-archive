@@ -8,7 +8,7 @@
   <meta property="og:title" content="สร้างจังหวะให้การเทรด – แบงค์ ศุภวัสส์" />
   <meta property="og:description" content="โปรแกรม IRT GOLD | คอร์สเรียนเทรด | สัญญาณ BUY/SELL realtime" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="profile.jpg.jpg" />
+  <meta property="og:image" content="profile.jpg" />
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     :root{
@@ -25,7 +25,7 @@
     .title{font-weight:700;font-size:clamp(24px,4vw,36px);letter-spacing:.2px;margin:0;color:var(--brand)}
     .subtitle{margin:8px 0 0;color:var(--muted);font-weight:500}
     .social{display:flex;gap:14px;justify-content:center;margin-top:16px}
-    .social a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:12px;background:var(--panel-2);text-decoration:none}
+    .social a img{width:40px;height:40px;border-radius:12px;object-fit:cover}
     .grid{display:grid;gap:18px;padding:18px}
     @media(min-width:720px){.grid{grid-template-columns:repeat(2,1fr)}}
     .section{background:var(--panel-2);border-radius:16px;padding:18px}
@@ -37,35 +37,54 @@
     .btn.phone{background:#2bd576;color:#0b2b1d}
     .btn:hover{filter:brightness(1.03)}
     footer{color:var(--muted);font-size:13px;text-align:center;margin:18px 0 86px}
-    /* ปรับให้ภาพยาวลงมา */
-    .featured img {
-      display: block;
-      width: 100%;
-      height: auto;
-      margin-bottom: 20px;
-      border-radius: 12px;
-    }
+    .badges{display:grid;gap:12px}
+    @media(min-width:720px){.badges{grid-template-columns:repeat(3,1fr)}}
+    .badge{background:linear-gradient(180deg,#203b7e,#152a58);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:14px;text-align:center}
+    .badge img{max-width:100%;border-radius:10px;margin-bottom:8px}
+    .badge h4{margin:0 0 6px;color:var(--brand)}
+    .kbd{display:inline-block;padding:2px 6px;border-radius:6px;background:#0c1a3a;border:1px solid #30457e;color:#b9c3e6;font-size:12px}
   </style>
 </head>
 <body>
   <div class="wrap">
     <!-- HERO -->
     <header class="card hero center">
-      <img class="avatar" src="profile.jpg.jpg" alt="Bank Supphawat" />
+      <img class="avatar" src="profile.jpg" alt="Bank Supphawat" />
       <h1 class="title">สร้างจังหวะให้การเทรด – แบงค์ ศุภวัสส์</h1>
       <p class="subtitle">โปรแกรม <b>IRT GOLD</b> • คอร์ส Private / กลุ่ม • สัญญาณ BUY–SELL แบบ Realtime</p>
       <nav class="social">
-        <a href="https://www.facebook.com/meedee.indi" target="_blank">FB</a>
-        <a href="https://www.tiktok.com/@supphawat1499" target="_blank">TT</a>
-        <a href="https://www.youtube.com" target="_blank">YT</a>
+        <a href="https://www.facebook.com/Meedee.Indi/?locale=th_TH" target="_blank">
+          <img src="Logo.facebook.png" alt="Facebook">
+        </a>
+        <a href="https://lin.ee/W2zLQNh" target="_blank">
+          <img src="Logo.line.png" alt="LINE">
+        </a>
+        <a href="https://www.tiktok.com/@supphawat1499?is_from_webapp=1&sender_device=pc" target="_blank">
+          <img src="Logo.tiktok.png" alt="TikTok">
+        </a>
+        <a href="https://youtube.com/@ldline-bank.w1994?si=Lv0UoDxSkO3xk31P" target="_blank">
+          <img src="Logo.youtube.png" alt="YouTube">
+        </a>
       </nav>
     </header>
 
     <!-- FEATURED IMAGES -->
-    <section class="featured">
-      <img src="course-private.png" alt="คอร์สเรียนส่วนตัว">
-      <img src="signal-free.png" alt="รับสัญญาณ Signal ฟรี">
-      <img src="irt-gold-program.png" alt="IRT GOLD Program">
+    <section class="badges">
+      <div class="badge">
+        <img src="course-private.png" alt="คอร์สเรียนส่วนตัว">
+        <h4>คอร์สเรียนส่วนตัว</h4>
+        <p>เรียนแบบ 1 ต่อ 1 หรือกลุ่มเล็ก เน้นความเข้าใจและการปรับใช้จริง</p>
+      </div>
+      <div class="badge">
+        <img src="signal-free.png" alt="รับสัญญาณ Signal ฟรี">
+        <h4>รับสัญญาณ Signal ฟรี</h4>
+        <p>เข้ากลุ่มรับสัญญาณซื้อ–ขายฟรี พร้อมคำแนะนำประกอบ</p>
+      </div>
+      <div class="badge">
+        <img src="irt-gold-program.png" alt="IRT GOLD Program">
+        <h4>IRT GOLD Program</h4>
+        <p>โปรแกรมวิเคราะห์แนวรับ–แนวต้าน พร้อมสัญญาณ BUY/SELL อัตโนมัติ</p>
+      </div>
     </section>
 
     <!-- CONTENT -->
