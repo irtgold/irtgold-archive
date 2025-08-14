@@ -8,7 +8,7 @@
   <meta property="og:title" content="สร้างจังหวะให้การเทรด – แบงค์ ศุภวัสส์" />
   <meta property="og:description" content="โปรแกรม IRT GOLD | คอร์สเรียนเทรด | สัญญาณ BUY/SELL realtime" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="profile.jpg" />
+  <meta property="og:image" content="profile.jpg.jpg" />
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     :root{
@@ -37,19 +37,21 @@
     .btn.phone{background:#2bd576;color:#0b2b1d}
     .btn:hover{filter:brightness(1.03)}
     footer{color:var(--muted);font-size:13px;text-align:center;margin:18px 0 86px}
-    .badges{display:grid;gap:12px}
-    @media(min-width:720px){.badges{grid-template-columns:repeat(3,1fr)}}
-    .badge{background:linear-gradient(180deg,#203b7e,#152a58);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:14px;text-align:center}
-    .badge img{max-width:100%;border-radius:10px;margin-bottom:8px}
-    .badge h4{margin:0 0 6px;color:var(--brand)}
-    .kbd{display:inline-block;padding:2px 6px;border-radius:6px;background:#0c1a3a;border:1px solid #30457e;color:#b9c3e6;font-size:12px}
+    /* ปรับให้ภาพยาวลงมา */
+    .featured img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 12px;
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
     <!-- HERO -->
     <header class="card hero center">
-      <img class="avatar" src="profile.jpg" alt="Bank Supphawat" />
+      <img class="avatar" src="profile.jpg.jpg" alt="Bank Supphawat" />
       <h1 class="title">สร้างจังหวะให้การเทรด – แบงค์ ศุภวัสส์</h1>
       <p class="subtitle">โปรแกรม <b>IRT GOLD</b> • คอร์ส Private / กลุ่ม • สัญญาณ BUY–SELL แบบ Realtime</p>
       <nav class="social">
@@ -60,22 +62,10 @@
     </header>
 
     <!-- FEATURED IMAGES -->
-    <section class="badges">
-      <div class="badge">
-        <img src="course-private.jpg" alt="คอร์สเรียนส่วนตัว">
-        <h4>คอร์สเรียนส่วนตัว</h4>
-        <p>เรียนแบบ 1 ต่อ 1 หรือกลุ่มเล็ก เน้นความเข้าใจและการปรับใช้จริง</p>
-      </div>
-      <div class="badge">
-        <img src="signal-free.jpg" alt="รับสัญญาณ Signal ฟรี">
-        <h4>รับสัญญาณ Signal ฟรี</h4>
-        <p>เข้ากลุ่มรับสัญญาณซื้อ–ขายฟรี พร้อมคำแนะนำประกอบ</p>
-      </div>
-      <div class="badge">
-        <img src="irt-gold-program.jpg" alt="IRT GOLD Program">
-        <h4>IRT GOLD Program</h4>
-        <p>โปรแกรมวิเคราะห์แนวรับ–แนวต้าน พร้อมสัญญาณ BUY/SELL อัตโนมัติ</p>
-      </div>
+    <section class="featured">
+      <img src="course-private.jpg.png" alt="คอร์สเรียนส่วนตัว">
+      <img src="signal-free.jpg.png" alt="รับสัญญาณ Signal ฟรี">
+      <img src="irt-gold-program.jpg.png" alt="IRT GOLD Program">
     </section>
 
     <!-- CONTENT -->
