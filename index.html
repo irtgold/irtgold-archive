@@ -11,46 +11,52 @@
   <meta property="og:image" content="profile.jpg.jpg" />
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
-    :root{--bg:#0d1b3d;--panel:#142857;--panel-2:#1b2e5a;--brand:#ffd700;--text:#e9eefc;--muted:#b9c3e6;}
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:'Prompt',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-    a{color:inherit;text-decoration:none}
-    .wrap{max-width:980px;margin-inline:auto;padding:24px}
-    .card{background:var(--panel);border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.25);overflow:hidden}
-    .center{text-align:center}
-    .hero{padding:28px 20px 24px}
-    .avatar{width:180px;height:180px;border-radius:999px;border:6px solid var(--brand);object-fit:cover;display:block;margin:8px auto 18px}
-    .title{font-weight:700;font-size:clamp(24px,4vw,36px);letter-spacing:.2px;margin:0;color:var(--brand)}
-    .subtitle{margin:8px 0 0;color:var(--muted);font-weight:500}
-    .social{display:flex;gap:14px;justify-content:center;margin-top:16px}
-    .social a img{width:40px;height:40px;border-radius:12px;object-fit:cover}
-    .grid{display:grid;gap:18px;padding:18px}
-    @media(min-width:720px){.grid{grid-template-columns:repeat(2,1fr)}}
-    .section{background:var(--panel-2);border-radius:16px;padding:18px}
-    .section h3{margin:0 0 10px;color:var(--brand)}
-    ul{margin:0;padding-left:18px}
-    .cta-bar{position:fixed;inset:auto 16px 16px;display:flex;gap:12px;z-index:40}
-    .btn{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 16px;border:none;border-radius:14px;font-weight:700;font-size:16px;cursor:pointer}
-    .btn.line{background:var(--brand);color:#222}
-    .btn.phone{background:#2bd576;color:#0b2b1d}
-    .btn:hover{filter:brightness(1.03)}
-    footer{color:var(--muted);font-size:13px;text-align:center;margin:18px 0 86px}
+    :root{ --bg:#0d1b3d; --panel:#142857; --panel-2:#1b2e5a; --brand:#ffd700; --text:#e9eefc; --muted:#b9c3e6; }
+    *{ box-sizing:border-box }
+    html,body{ margin:0; padding:0; background:var(--bg); color:var(--text); font-family:'Prompt',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif }
+    a{ color:inherit; text-decoration:none }
 
-    /* ==== รูปคอร์สแบบยาวและคลิกได้ ==== */
-    .featured{margin:18px 0}
-    .featured a{display:block}
+    .wrap{ max-width:980px; margin-inline:auto; padding:24px }
+    .card{ background:var(--panel); border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,.25); overflow:hidden }
+    .center{ text-align:center }
+    .hero{ padding:28px 20px 24px }
+    .avatar{ width:180px; height:180px; border-radius:999px; border:6px solid var(--brand); object-fit:cover; display:block; margin:8px auto 18px }
+    .title{ font-weight:700; font-size:clamp(24px,4vw,36px); letter-spacing:.2px; margin:0; color:var(--brand) }
+    .subtitle{ margin:8px 0 0; color:var(--muted); font-weight:500 }
+
+    .social{ display:flex; gap:14px; justify-content:center; margin-top:16px }
+    .social a img{ width:40px; height:40px; border-radius:12px; object-fit:cover }
+
+    /* แบนเนอร์ 3 รูปแบบยาว + คลิกได้ */
+    .featured{ margin:18px 0 }
+    .featured a{ display:block }
     .featured img{
-      display:block;width:100%;height:auto;margin:0 0 16px;border-radius:12px;
-      box-shadow:0 8px 24px rgba(0,0,0,.25);transition:transform .15s ease, box-shadow .15s ease
+      display:block; width:100%; height:auto; margin:0 0 16px; border-radius:12px;
+      box-shadow:0 8px 24px rgba(0,0,0,.25); transition:transform .15s ease, box-shadow .15s ease
     }
-    .featured a:hover img{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,.35)}
+    .featured a:hover img{ transform:translateY(-2px); box-shadow:0 12px 28px rgba(0,0,0,.35) }
+
+    /* กล่องข้อมูล 3 อัน: บังคับเรียงลงมาเป็นคอลัมน์เดียวเสมอ */
+    .grid{ display:grid; grid-template-columns:1fr; gap:18px; padding:18px 0 }
+    @media(min-width:720px){ .grid{ grid-template-columns:1fr } }
+    .section{ background:var(--panel-2); border-radius:16px; padding:18px }
+    .section h3{ margin:0 0 10px; color:var(--brand) }
+    .grid .section{ margin:0 }
+
+    .btn{ flex:1; display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:12px 16px; border:none; border-radius:14px; font-weight:700; font-size:16px; cursor:pointer }
+    .cta-bar{ position:fixed; inset:auto 16px 16px; display:flex; gap:12px; z-index:40 }
+    .btn.line{ background:var(--brand); color:#222 }
+    .btn.phone{ background:#2bd576; color:#0b2b1d }
+    .btn:hover{ filter:brightness(1.03) }
+
+    footer{ color:var(--muted); font-size:13px; text-align:center; margin:18px 0 86px }
   </style>
 </head>
 <body>
   <div class="wrap">
     <!-- HERO -->
     <header class="card hero center">
-      <!-- ใช้ชื่อไฟล์ตามใน repo: profile.jpg.jpg -->
+      <!-- ใช้ชื่อไฟล์ตามที่อยู่ใน repo -->
       <img class="avatar" src="profile.jpg.jpg" alt="Bank Supphawat" />
       <h1 class="title">สร้างจังหวะให้การเทรด – แบงค์ ศุภวัสส์</h1>
       <p class="subtitle">โปรแกรม <b>IRT GOLD</b> • คอร์ส Private / กลุ่ม • สัญญาณ BUY–SELL แบบ Realtime</p>
@@ -73,17 +79,17 @@
     <!-- FEATURED: รูปใหญ่เรียงลงมา + คลิกเด้งลิงก์ -->
     <section class="featured">
       <a href="https://lin.ee/W2zLQNh" target="_blank" rel="noopener">
-        <img src="course-private.png" alt="คอร์สเรียนส่วนตัว (Private Course)">
+        <img src="course-private.png" alt="คอร์สเรียนส่วนตัว (Private Course)" loading="lazy">
       </a>
       <a href="https://lin.ee/W2zLQNh" target="_blank" rel="noopener">
-        <img src="signal-free.png" alt="รับสัญญาณ SIGNAL ฟรี">
+        <img src="signal-free.png" alt="รับสัญญาณ SIGNAL ฟรี" loading="lazy">
       </a>
       <a href="https://www.facebook.com/Meedee.Indi/?locale=th_TH" target="_blank" rel="noopener">
-        <img src="irt-gold-program.png" alt="IRT GOLD Program">
+        <img src="irt-gold-program.png" alt="IRT GOLD Program" loading="lazy">
       </a>
     </section>
 
-    <!-- CONTENT -->
+    <!-- CONTENT: 3 กล่องเรียงลงมา -->
     <main class="grid">
       <section class="section">
         <h3>บริการหลัก</h3>
