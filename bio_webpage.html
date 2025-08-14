@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>สร้างจังหวะให้การเทรด – แบงค์ ศุภวัสส์ | IRT GOLD</title>
+  <meta name="description" content="โค้ชแบงค์ ศุภวัสส์ สร้างจังหวะให้การเทรด โปรแกรม IRT GOLD คอร์ส Private & กลุ่ม พร้อมสัญญาณ BUY/SELL realtime" />
+  <meta property="og:title" content="สร้างจังหวะให้การเทรด – แบงค์ ศุภวัสส์" />
+  <meta property="og:description" content="โปรแกรม IRT GOLD | คอร์สเรียนเทรด | สัญญาณ BUY/SELL realtime" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="profile.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --bg:#0d1b3d;--panel:#142857;--panel-2:#1b2e5a;--brand:#ffd700;--text:#e9eefc;--muted:#b9c3e6;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:'Prompt',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:inherit}
+    .wrap{max-width:980px;margin-inline:auto;padding:24px}
+    .card{background:var(--panel);border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.25);overflow:hidden}
+    .center{text-align:center}
+    .hero{padding:28px 20px 24px}
+    .avatar{width:180px;height:180px;border-radius:999px;border:6px solid var(--brand);object-fit:cover;display:block;margin:8px auto 18px}
+    .title{font-weight:700;font-size:clamp(24px,4vw,36px);letter-spacing:.2px;margin:0;color:var(--brand)}
+    .subtitle{margin:8px 0 0;color:var(--muted);font-weight:500}
+    .social{display:flex;gap:14px;justify-content:center;margin-top:16px}
+    .social a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:12px;background:var(--panel-2);text-decoration:none}
+    .grid{display:grid;gap:18px;padding:18px}
+    @media(min-width:720px){.grid{grid-template-columns:repeat(2,1fr)}}
+    .section{background:var(--panel-2);border-radius:16px;padding:18px}
+    .section h3{margin:0 0 10px;color:var(--brand)}
+    ul{margin:0;padding-left:18px}
+    .cta-bar{position:fixed;inset:auto 16px 16px;display:flex;gap:12px;z-index:40}
+    .btn{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 16px;border:none;border-radius:14px;font-weight:700;font-size:16px;cursor:pointer}
+    .btn.line{background:var(--brand);color:#222}
+    .btn.phone{background:#2bd576;color:#0b2b1d}
+    .btn:hover{filter:brightness(1.03)}
+    footer{color:var(--muted);font-size:13px;text-align:center;margin:18px 0 86px}
+    .badges{display:grid;gap:12px}
+    @media(min-width:720px){.badges{grid-template-columns:repeat(3,1fr)}}
+    .badge{background:linear-gradient(180deg,#203b7e,#152a58);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:14px;text-align:center}
+    .badge img{max-width:100%;border-radius:10px;margin-bottom:8px}
+    .badge h4{margin:0 0 6px;color:var(--brand)}
+    .kbd{display:inline-block;padding:2px 6px;border-radius:6px;background:#0c1a3a;border:1px solid #30457e;color:#b9c3e6;font-size:12px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- HERO -->
+    <header class="card hero center">
+      <img class="avatar" src="profile.jpg" alt="Bank Supphawat" />
+      <h1 class="title">สร้างจังหวะให้การเทรด – แบงค์ ศุภวัสส์</h1>
+      <p class="subtitle">โปรแกรม <b>IRT GOLD</b> • คอร์ส Private / กลุ่ม • สัญญาณ BUY–SELL แบบ Realtime</p>
+      <nav class="social">
+        <a href="https://www.facebook.com/meedee.indi" target="_blank">FB</a>
+        <a href="https://www.tiktok.com/@supphawat1499" target="_blank">TT</a>
+        <a href="https://www.youtube.com" target="_blank">YT</a>
+      </nav>
+    </header>
+
+    <!-- FEATURED IMAGES -->
+    <section class="badges">
+      <div class="badge">
+        <img src="course-private.jpg" alt="คอร์สเรียนส่วนตัว">
+        <h4>คอร์สเรียนส่วนตัว</h4>
+        <p>เรียนแบบ 1 ต่อ 1 หรือกลุ่มเล็ก เน้นความเข้าใจและการปรับใช้จริง</p>
+      </div>
+      <div class="badge">
+        <img src="signal-free.jpg" alt="รับสัญญาณ Signal ฟรี">
+        <h4>รับสัญญาณ Signal ฟรี</h4>
+        <p>เข้ากลุ่มรับสัญญาณซื้อ–ขายฟรี พร้อมคำแนะนำประกอบ</p>
+      </div>
+      <div class="badge">
+        <img src="irt-gold-program.jpg" alt="IRT GOLD Program">
+        <h4>IRT GOLD Program</h4>
+        <p>โปรแกรมวิเคราะห์แนวรับ–แนวต้าน พร้อมสัญญาณ BUY/SELL อัตโนมัติ</p>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <main class="grid">
+      <section class="section">
+        <h3>บริการหลัก</h3>
+        <ul>
+          <li>คอร์สเรียนเทรดส่วนตัว (Private) และกลุ่ม</li>
+          <li>โปรแกรม <b>IRT GOLD</b> วิเคราะห์แนวรับ–แนวต้านอัตโนมัติ</li>
+          <li>สัญญาณ <b>BUY / SELL</b> แบบ Realtime</li>
+          <li>ที่ปรึกษาวางแผนการเทรดและจิตวิทยาการลงทุน</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h3>ประวัติและผลงาน</h3>
+        <p>โค้ชแบงค์ ศุภวัสส์ ผู้ก่อตั้ง IRT GOLD และผู้สอนคอร์สการเทรดกว่า 500+ คน มีประสบการณ์เทรดตลาด Forex และทองคำมากกว่า 8 ปี พร้อมพัฒนาซอฟต์แวร์ช่วยวิเคราะห์กราฟอย่างแม่นยำ</p>
+      </section>
+
+      <section class="section">
+        <h3>ติดต่อ</h3>
+        <p>📍 Udon Thani, Thailand</p>
+        <p>📞 065-534-9456</p>
+        <p>✉️ bank081a@gmail.com</p>
+        <p>💬 Messenger: <a href="https://m.me/Meedee.Indi" target="_blank">m.me/Meedee.Indi</a></p>
+      </section>
+    </main>
+
+    <footer>
+      © 2025 สร้างจังหวะให้การเทรด – แบงค์ ศุภวัสส์
+    </footer>
+  </div>
+
+  <!-- CTA BAR -->
+  <div class="cta-bar">
+    <a class="btn line" href="https://line.me/ti/p/~@irtgold" target="_blank">ทัก LINE</a>
+    <a class="btn phone" href="tel:0655349456">โทรเลย</a>
+  </div>
+</body>
+</html>
