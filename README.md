@@ -1,1 +1,1 @@
-# IRT GOLD
+# IRT
